@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>dabytech-Quiz_app</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="start">Start Quiz</div>
+			<div id="guide">
+				<h2>quiz guide</h2>
+				<h4>1. you have only 20 seconds for each questions.</h4>
+				<h4>2. once you select an option, it cannot be undone.</h4>
+				<h4>
+					3. you'll gain points on the basic of your correct answers
+				</h4>
+				<h4>4. you cannot exit from the quiz while you are playing</h4>
+				<div id="button">
+					<button id="exit">Exit</button>
+					<button id="continue">Continue</button>
+				</div>
+			</div>
+
+			<div id="quiz">
+				<div id="quiz_header">
+					<h5>Matriks quiz app</h5>
+					<div id="timer">
+						<h6>Time left</h6>
+						<h6 id="time">20</h6>
+					</div>
+				</div>
+				<div id="question">
+					<h3 id="questionNo"></h3>
+					<h3 id="questionText"></h3>
+				</div>
+				<!-- choices -->
+				<div id="optionList">
+					<h4 class="choice_que" id="option1"></h4>
+					<h4 class="choice_que" id="option2"></h4>
+					<h4 class="choice_que" id="option3"></h4>
+					<h4 class="choice_que" id="option4"></h4>
+				</div>
+                <!-- answers -->
+                <div id="answersSection">
+                    <h3 id="total_correct"></h3>
+                    <h3 id="next_question">Next</h3>
+                </div>
+			</div>
+            <!-- result -->
+			<div id="result">
+                <i class="fas fa-trophy"></i>
+                <h6>Congratulations! you have completed the quiz</h6>
+                <h6 id="points"></h6>
+                <button id="quit">quit</button>
+                <button id="startAgain">start again</button>
+            </div>
+		</div>
+
+        <script src="https://kit.fontawesome.com/013e95e6af.js" crossorigin="anonymous"></script>
+		<script src="app.js" type="module"></script>
+	</body>
+</html>
